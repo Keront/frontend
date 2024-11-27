@@ -1,0 +1,9 @@
+.btn_blue{
+    background-color: #0033FF;
+    color: #FFFFFF;
+    border-radius: 105px;
+    min-width: 130px;
+    min-height: 30px;
+    font-size: 2.5vw;
+    font-family:fantasy;
+}
