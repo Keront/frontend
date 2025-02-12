@@ -1,3 +1,32 @@
+.hero{
+    ba
+}
+
+.headerRoudnedRectangle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.headerBigPhoto{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .header_main{
     display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    
+}
+
+.header_nav{
+    flex: 1;
+    background-color: lightblue;
+    margin: 10px;
+    
 }

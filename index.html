@@ -2,51 +2,58 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/base/normalize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/base/normalize.css">
 </head>
 
 
 <body>
     <header>
-        <div id="logo">
-        </div>
-        <div>
-            <img src="img\header\rectangle.svg">
-            <nav class="header_main">
-                <ol class="header_nav">
-                    <li><a id="studio">STUDIO</a></li>
-                    <li><a id="community">COMMUNITY</a></li>
-                    <li><a id="sounds">SOUNDS</a></li>
-                    <li><a id="alugins">PLUGINS</a></li>
-                    <li><a id="blog">BLOG</a></li>
-                </ol>
-                <ol class="header_auth">
-                    <li><button id="login">LOG IN</button></li>
-                    <li><button id="sing_up">SING UP</button></li>
-                </ol>
-                
-                
-            </nav>
-            <img src="img\header\logo.svg">
-            <div>
-                
+        <img class="headerRoudnedRectangle" src="img\header\rectangle.svg">
+
+        
+        <div class="hero" style="display: flex;">
+            <div class="hero__description">
+                <img src="img\group1\1.jpg">
+                <p>Where your music starts</p>
+                <p>Royalty-free sounds. Industry-leading software. <br>Endless inspiration. Start creating with Splice.</p>
+                <button class="buttonBlue">SING UP</button>
+            </div>
+
+            <div class="hero__img">
+                <img class="headerBigPhoto" src="img\group1\big_photo.png">
             </div>
         </div>
+
+
+
+
+        <nav class="header_main">
+            <ol>
+                <a>
+                    <img src="img\header\logo.svg"></img>
+                </a>
+            </ol>
+            <ol class="header_nav">
+                <a>STUDIO</a>
+                <a>COMMUNITY</a>
+                <a>SOUNDS</a>
+                <a>PLUGINS</a>
+                <a>BLOG</a>
+            </ol>
+            <ol class="header_nav">
+                <button id="login">LOG IN</button>
+                <button id="sing_up">SING UP</button>
+            </ol>
+        </nav>
+
     </header>
 
     <main>
-        <div id="gorup_1_with_image">
-            <img src="img\group1\1.jpg">
-            <p>Where your music starts</p>
-            <p>Royalty-free sounds. Industry-leading software. <br>Endless inspiration. Start creating with Splice.</p>
-            <button class="btn_blue">SING UP</button>
-            <img src="img\group1\2.jpg">
-        </div>
-        <div id="gorup_2">
+        <div id="gorup_1">
             <div>
                 <p>FEATURE IN</p>
                 <img src="img\group2\1.svg">
@@ -56,7 +63,7 @@
                 <img src="img\group2\5.svg">
             </div>
         </div>
-        <div id="gorup_3">
+        <div id="gorup_2">
             <p>SOUNDS</p>
             <p>Find your sound</p>
             <p>Preview and download millions of royalty-free samples from top producers, artists, and sound designers.
@@ -71,7 +78,7 @@
             <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
             <button>TRY GEAR</button>
         </div>
-        <div id="gorup_4">
+        <div id="gorup_3">
             <p>STUDIO</p>
             <p>Stay in sync</p>
             <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
@@ -80,22 +87,22 @@
         </div>
 
 
-        <div class="reviews">
+        <div id="group_4" class="reviews">
             <img src="img\group5\fon.svg">
             <img src="img\group5\globus.png">
 
-            <div class="reviews__description description description--center">
-                <small class="description__notice"></small>
+            <div>
+                <small></small>
 
-                <h2 class="description__title">What creators<br>are saying<br>about Splice</h2>
+                <h2>What creators<br>are saying<br>about Splice</h2>
 
-                <p class="description__text">Try industry-leading music software for free, pay it off over time and own it forever.></p>
-                
-                <button class="description__btn">TRY IT NOW</button>
+                <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
+
+                <button>TRY IT NOW</button>
             </div>
 
-            <div class="reviews__list">
-                <article class="reviews__item" style="background-color:grey;">
+            <div>
+                <article style="background-color:grey;">
                     <p>I can always find what Im looking for on Splice, whether its the exact sound I want or just a bit
                         of inspiration.</p>
                     <img src="img/group5/avatars/1.png">
@@ -103,7 +110,7 @@
                     <p>Artist</p>
                 </article>
 
-                <div class="reviews__item" style="background-color:grey;">
+                <div style="background-color:grey;">
                     <p>Finally a way to buy plugins that works. By paying a little at a time, producers can get legit
                         access to the top VSTs.</p>
                     <img src="img/group5/avatars/2.png">
