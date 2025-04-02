@@ -1,4 +1,10 @@
+/*Подключение стилей относящихся к header*/
 @import 'blocks/header.css';
-@import 'blocks/body.css';
+/*Подключение стилей относящихся к main*/
+@import 'blocks/main.css';
+/*Подключение стилей относящихся к footer*/
 @import 'blocks/footer.css';
+
 @import 'blocks/btn_blue.css';
+
+@import 'blocks/body.css';

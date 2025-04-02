@@ -1,20 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru-RU">
+<html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="\styles\styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splice Landing Page</title>
+    <title>Расположение элементов</title>
+    <style>
+        * {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        html {
+            border: 0;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        main {
+            width: 1440px;
+            height: 6000px;
+        }
+
+        .container {
+            z-index: -1;
+            position: relative;
+            height: 702px;
+        }
+
+        .picture1 {
+            width: 100%;
+        }
+
+        .picture2 {
+            position: absolute;
+            right: 0;
+            width: 55%;
+        }
+    </style>
 </head>
+
 <body>
-    
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-
-<img src="img\1.png" alt="HTML tutorial" style="width:42px;height:42px;">
-
-
+    <main>
+        <div class="container">
+            <img class="picture1" src="img/header/rectangle.svg" alt="Фон">
+            <img class="picture2" src="img/group1/big_photo.png" alt="Фото">
+        </div>
+    </main>
 </body>
 
 </html>

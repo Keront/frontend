@@ -5,57 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/base/normalize.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        * {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 
 <body>
     <header>
-        <img class="headerRoudnedRectangle" src="img\header\rectangle.svg">
+        <div class="header__nav-bar">
+            <img class="header__logo" src="img\header\logo.svg"></img>
 
-        
-        <div class="hero" style="display: flex;">
-            <div class="hero__description">
-                <img src="img\group1\1.jpg">
-                <p>Where your music starts</p>
-                <p>Royalty-free sounds. Industry-leading software. <br>Endless inspiration. Start creating with Splice.</p>
-                <button class="buttonBlue">SING UP</button>
+            <nav class="header__nav">
+                <a class="header__item">STUDIO</a>
+                <a class="header__item">COMMUNITY</a>
+                <a class="header__item">SOUNDS</a>
+                <a class="header__item">PLUGINS</a>
+                <a class="header__item">BLOG</a>
+            </nav>
+
+            <div class="header__autorization">
+                <button class="header__item autorization" type="button">LOG IN</button>
+                <button class="header__item autorization sing-up" type="button">SING UP</button>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <div class="container__height">
+            <div class="container__background">
+                <img class="container__background_rectangle" src="img\header\rectangle.svg">
+                <img class="container__background_big-photo" src="img\group1\big_photo.png">
             </div>
 
-            <div class="hero__img">
-                <img class="headerBigPhoto" src="img\group1\big_photo.png">
+            <div class="container__wrapper">
+                <img class="container__text_image" src="img\group1\text_image.png">
+                <p>Where your music starts</p>
+                <p>Royalty-free sounds. Industry-leading software. <br>Endless inspiration. Start creating with Splice.
+                </p>
+                <button class="buttonBlue">SING UP</button>
             </div>
         </div>
 
 
 
-
-        <nav class="header_main">
-            <ol>
-                <a>
-                    <img src="img\header\logo.svg"></img>
-                </a>
-            </ol>
-            <ol class="header_nav">
-                <a>STUDIO</a>
-                <a>COMMUNITY</a>
-                <a>SOUNDS</a>
-                <a>PLUGINS</a>
-                <a>BLOG</a>
-            </ol>
-            <ol class="header_nav">
-                <button id="login">LOG IN</button>
-                <button id="sing_up">SING UP</button>
-            </ol>
-        </nav>
-
-    </header>
-
-    <main>
-        <div id="gorup_1">
-            <div>
-                <p>FEATURE IN</p>
+        <div class="container__companies">
+            <p class="container__companies_feature-in">FEATURE IN</p>
+            <div class="container__companies_images">
                 <img src="img\group2\1.svg">
                 <img src="img\group2\2.svg">
                 <img src="img\group2\3.svg">
@@ -63,20 +64,28 @@
                 <img src="img\group2\5.svg">
             </div>
         </div>
-        <div id="gorup_2">
-            <p>SOUNDS</p>
-            <p>Find your sound</p>
-            <p>Preview and download millions of royalty-free samples from top producers, artists, and sound designers.
-                Available on desktop, web, and mobile.</p>
-            <button>TRY SOUNDS</button>
-            <img src="img\group3\Vector 8.svg">
+        <div class="container__presentation">
+            <div class="container__find-your-sound">
+                <p>SOUNDS</p>
+                <p>Find your sound</p>
+                <p>Preview and download millions of royalty-free samples from top producers, artists, and sound
+                    designers. Available on desktop, web, and mobile.</p>
+                <button>TRY SOUNDS</button>
+            </div>
+
+            <img class="container__background-line" src="img\group3\Vector 8.svg">
             <img src="img\group3\music.png">
             <img src="img\group3\Rectangle 11.svg">
-            <img src="img/group3/Logos.png">
-            <p>PLUGINS</p>
-            <p>Build your digital studio</p>
-            <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
-            <button>TRY GEAR</button>
+            <div class="container__plugins">
+                <img class="container__plugins_image" src="img/group3/Logos.png">
+                <div class="container__build-your-digital-studio">
+                    <p>PLUGINS</p>
+                    <p>Build your digital studio</p>
+                    <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
+                    <button>TRY GEAR</button>
+                </div>
+                
+            </div>
         </div>
         <div id="gorup_3">
             <p>STUDIO</p>
@@ -92,7 +101,6 @@
             <img src="img\group5\globus.png">
 
             <div>
-                <small></small>
 
                 <h2>What creators<br>are saying<br>about Splice</h2>
 

@@ -1,4 +1,10 @@
-.main{
-    text-align: right;
-    
+body {
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 1440px;
 }
+
+
