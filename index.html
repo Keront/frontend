@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/base/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Расположение элементов</title>
+    <link rel="icon" href="./img/logo-icon.svg" type="image/x-icon">
+    <title>splice</title>
     <style>
         * {
-            border: 1px solid black;
+            border: 1px solid green;
             box-sizing: border-box;
         }
 
@@ -21,7 +22,7 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="img/logo.svg">
+        <img class="header__logo" src="img/logo.svg" alt="logo">
 
         <nav class="header__nav">
             <a class="header__item">STUDIO</a>
@@ -41,12 +42,11 @@
         <div class="music-starts">
             <div class="music-starts__background">
 
-                <img class="music-starts__gray-rectangle-rounded-under" src="img/gray-rectangle-rounded-under.svg"
-                    alt="Фон">
-                <img class="music-starts__photo-with-two-people" src="img/photo-with-two-people.png" alt="Фото">
+                <img class="music-starts__gray-rectangle-rounded-under" src="img/gray-rectangle-rounded-under.svg" alt="gray-rectangle-rounded-under">
+                <img class="music-starts__photo-with-two-people" src="img/photo-with-two-people.png" alt="photo-with-two-people">
             </div>
             <div class="music-starts__continer">
-                <img class="music-starts__text_image" src="img/where-your-music-starts.png">
+                <img class="music-starts__text_image" src="img/where-your-music-starts.png" alt="where-your-music-starts">
                 <p>Where your music starts</p>
                 <p>Royalty-free sounds. Industry-leading software.
                     <br>Endless inspiration. Start creating with Splice.
@@ -57,11 +57,11 @@
         <div class="featured-in">
             <p class="featured-in__name">FEATURE IN</p>
             <div class="featured-in__many-names">
-                <img class="featured-in__item" src="./img/many-names-under-futured-in/1.svg">
-                <img class="featured-in__item" src="./img/many-names-under-futured-in/2.svg">
-                <img class="featured-in__item" src="./img/many-names-under-futured-in/3.svg">
-                <img class="featured-in__item" src="./img/many-names-under-futured-in/4.svg">
-                <img class="featured-in__item" src="./img/many-names-under-futured-in/5.svg">
+                <img class="featured-in__item" src="./img/many-names-under-futured-in/1.svg" alt="many-names-under-futured-in-1">
+                <img class="featured-in__item" src="./img/many-names-under-futured-in/2.svg" alt="many-names-under-futured-in-2">
+                <img class="featured-in__item" src="./img/many-names-under-futured-in/3.svg" alt="many-names-under-futured-in-3">
+                <img class="featured-in__item" src="./img/many-names-under-futured-in/4.svg" alt="many-names-under-futured-in-4">
+                <img class="featured-in__item" src="./img/many-names-under-futured-in/5.svg" alt="many-names-under-futured-in-5">
             </div>
         </div>
         <div class="sounds">
@@ -72,11 +72,11 @@
             <button class="sounds__try-sounds btn-blue">Try sound</button>
         </div>
         <div class="plugins">
-            <img class="plugins__line" src="./img/line-curved-light-purple.svg">
-            <img class="plugins__mucis-add" src="./     img/music-add-in-program.png">
-            <img class="plugins__background" src="./img/gray-gradient-rectangle-rounded-bottom.svg">
+            <img class="plugins__line" src="./img/line-curved-light-purple.svg" alt="line-curved-light-purple">
+            <img class="plugins__music-add" src="./img/music-add-in-program.png" alt="music-add-in-program">
+            <img class="plugins__background" src="./img/gray-gradient-rectangle-rounded-bottom.svg" alt="gray-gradient-rectangle-rounded-bottom">
             <div class="plugins__discription">
-                <img class="plugins__many-logo" src="./img/many-logo-in-circle.png">
+                <img class="plugins__many-logo" src="./img/many-logo-in-circle.png" alt="many-logo-in-circle">
                 <div class="plugins__many-logo-discription">
                     <p>PLUGINS</p>
                     <p>Build your digital studio</p>
@@ -92,38 +92,175 @@
                     <p>Try industry-leading music software for free, pay it off over time and own it forever.></p>
                     <button class="plugins__btn btn-blue">TRY GEAR</button>
                 </div>
-                <img class="plugins__many-logo" src="./img/demonstration-mobile-app.png">
+                <img class="plugins__many-logo" src="./img/demonstration-mobile-app.png" alt="demonstration-mobile-app">
             </div>
             <div class="praise">
                 <div class="praise__background">
-                    <img class="praise__background-black" src="./img/background-black-rounded-under.svg">
-                    <img class="praise__globus" src="./img/globus.png">
+                    <img class="praise__background-black" src="./img/background-black-rounded-under.svg" alt="background-black-rounded-under">
+                    <img class="praise__globus" src="./img/globus.svg" alt="globus">
                 </div>
                 <div class="praise__creators">
                     <div class="praise__discription">
                         <p>What creators are saying about Splice</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam.
+                            Turpis diam amet massa id.</p>
                         <button class="praise__btn btn-blue">TRY IT NOW</button>
                     </div>
                     <div class="praise__reviews">
-                        <div class="price__item">
+                        <div class="praise__item">
+                            <p class="praise__item-text">I can always find what Im looking for on Splice, whether its
+                                the exact sound I want or just a bit of inspiration.</p>
 
+                            <div class="praise__item-creator">
+                                <img class="praise__avatar" src="./img/avatars/1.png" alt="avatars-1">
+                                <div class="praise__item-creator-block">
+                                    <p class="praise__item-creator-name">Andrew Huang</p>
+                                    <p class="praise__item-creator-description">Artist</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price__item">
+                        <div class="praise__item">
+                            <p class="praise__item-text">Finally a way to buy plugins that works. By paying a little at
+                                a time, producers can get legit access to the top VSTs.</p>
 
+                            <div class="praise__item-creator">
+                                <img class="praise__avatar" src="./img/avatars/2.png" alt="avatars-2">
+                                <div class="praise__item-creator-block">
+                                    <p class="praise__item-creator-name">KSHMR</p>
+                                    <p class="praise__item-creator-description">Artist</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price__item price__item--left">
-
+                        <div class="praise__item praise__item--left">
+                            <p class="praise__item-text">Its been fun to dive into Splices creator community and explore
+                                tools that support my own creative process.</p>
+                            <div class="praise__item-creator">
+                                <img class="praise__avatar" src="./img/avatars/3.png" alt="avatars-3">
+                                <div class="praise__item-creator-block">
+                                    <p class="praise__item-creator-name">Kesha Lee</p>
+                                    <p class="praise__item-creator-description">Artist</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price__item">
-                            
+                        <div class="praise__item">
+                            <p class="praise__item-text">I can always find what Im looking for on Splice, whether its
+                                the exact sound I want or just a bit of inspiration.</p>
+                            <div class="praise__item-creator">
+                                <img class="praise__avatar" src="./img/avatars/1.png" alt="avatars-4">
+                                <div class="praise__item-creator-block">
+                                    <p class="praise__item-creator-name">Andrew Huang</p>
+                                    <p class="praise__item-creator-description">Artist</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
+                <div class="praise__good">
+                    <p class="praise__good-text">As good as it sounds</p>
+                    <div class="praise__icons-div">
+                        <div class="praise__icon">
+                            <img class="praise__icon-img" src="./img/icons/Volume Up.svg" alt="Volume Up">
+                            <p class="praise__icon-header">100 royalty free</p>
+                            <p class="praise__icon-description">Use sounds for anything. They’re cleared for commercial
+                                use.</p>
+                        </div>
+                        <div class="praise__icon">
+                            <img class="praise__icon-img" src="./img/icons/Unlock.svg" alt="Unlock">
+                            <p class="praise__icon-header">No commitments</p>
+                            <p class="praise__icon-description">Cancel your subscription at any time, no questions
+                                asked.</p>
+                        </div>
+                        <div class="praise__icon">
+                            <img class="praise__icon-img" src="./img/icons/Download.svg" alt="Download">
+                            <p class="praise__icon-header">Yours forever</p>
+                            <p class="praise__icon-description">Keep everything you download. Even if you cancel.</p>
+                        </div>
+                        <div class="praise__icon">
+                            <img class="praise__icon-img" src="./img/icons/Play.svg" alt="Play">
+                            <p class="praise__icon-header">Individual samples</p>
+                            <p class="praise__icon-description">Preview & download individual samples, not just full
+                                packs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="praise__gradient">
+                    <img class="praise__gradient-svg" src="./img/gradient.svg" alt="gradient">
+                    <p class="praise_gradient-text">Come change the way people make music</p>
+                    <button class="praise_gradient-btn">JOBS AT SPLICE</button>
+                </div>
             </div>
     </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="./img/logo.svg" alt="logo">
+            <p class="footer__logo-text">2021 Splice.com All Rights Reserved</p>
+        </div>
+        <div class="footer__links">
+            <div class="footer__item">
+                <h3 class="footer__item-h">STUDIO</h3>
+                <p>Features</p>
+                <p>About Splice Studio</p>
+                <p>Managing Your Production Library</p>
+                <p>Collaborating with Baewatch</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-h">COMMUNITY</h3>
+                <p>Ableton Live Projects</p>
+                <p>FL Studio Projects</p>
+                <p>Logic Pro X Projects</p>
+                <p>Garageband Projects</p>
+                <p>Remix Contests</p>
+                <p>Tiestos Secrets</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-h">SOUNDS</h3>
+                <p>Features</p>
+                <p>Catalog</p>
+                <p>How Jauz Uses Sounds</p>
+                <p>deadmau5s Chimaera</p>
+                <p>KSHMR Vol. 2</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-h">PLUGINS</h3>
+                <p>Top VSTs</p>
+                <p>Serum</p>
+                <p>Rent to Own</p>
+                <p>Free Plugins</p>
+                <p>Top Manufacturers</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-h">BEATMAKER</h3>
+                <p>Create Your Own Beat</p>
+                <p>Wakapella</p>
+                <p>Just Blaze</p>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__item-h">BLOG</h3>
+                <p>Latest Posts</p>
+                <p>Using Soundtoys Decapitator</p>
+                <p>Mastering 101</p>
+                <p>Producing Future Beats</p>
+                <p>Belonging at Splice</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <h class="footer__social-h">FIND US ON SOCIAL</h>
+            <div class="footer__social-icons">
+                <img src="img/footer/facebook.svg" alt="facebook">
+                <img src="img/footer/x.svg" alt="x">
+                <img src="img/footer/inst.svg" alt="inst">
+                <img src="img/footer/youtube.svg" alt="youtube">
+            </div>
+            <div class="footer__social-about">
+                <p class="footer__social-about-p">Terms of Use</p>
+                <p class="footer__social-about-p">Privacy Policy</p>
+                <p class="footer__social-about-p">Jobs</p>
+                <p class="footer__social-about-p">Contact</p>
+                <p class="footer__social-about-p">Help</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

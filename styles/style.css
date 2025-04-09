@@ -2,8 +2,10 @@
 @import './blocks/header.css';
 /* Стиль для синей кнопки */
 @import './blocks/btn-blue.css';
-/*Подключение стилей относящихся к footer*/
+/*Подключение стилей относящихся к body*/
 @import './blocks/body.css';
+/*Подключение стилей относящихся к footer*/
+@import './blocks/footer.css';
 /*Подключение стилей относящихся к content*/
 @import './blocks/content.css';
 /*Подключение стилей относящихся к music-starts*/

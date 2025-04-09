@@ -1,0 +1,69 @@
+.footer {
+    width: 1222px;
+    margin: 86px 138px 131px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.footer__logo {
+    width: 191px;
+    height: 62px;
+}
+
+.footer__logo-text {
+    font-size: 10px;
+}
+
+.footer__links {
+    width: 620px;
+    height: 465px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.footer__item {
+    font-size: 13px;
+    min-width: 130px;
+    max-height: 206px;
+}
+
+.footer__item-h {
+    font-size: 15px;
+    margin: 0;
+
+}
+
+
+.footer__social {
+    width: 232px;
+    height: 130px;
+}
+
+.footer__social-h {
+    
+}
+
+.footer__social-icons {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+
+.footer__social-about {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 11px 32px;
+
+}
+
+.footer__social-about-p {
+    margin: 0;
+}
