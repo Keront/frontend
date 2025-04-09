@@ -1,0 +1,54 @@
+.praise{
+    position: relative;
+    margin-top: 70px;
+    display:flex;
+    justify-content: center;
+}
+
+.praise__background{
+    position: absolute;
+    top:0;
+    z-index: -1;
+    opacity: 10%;
+}
+
+.praise__background-black{
+    margin-top:184px;
+
+}
+
+.praise__globus{
+    position: absolute;
+    right:0;
+}
+
+.praise__creators{
+    width: 1259px;
+    height: 471px;
+    margin-top:330px;
+    display:flex;
+    gap:161px
+}
+
+.praise__discription{
+    width: 400px;
+    height: 348px;
+    margin-top: 84px;
+}
+
+.praise__reviews{
+    
+    width: 698px;
+    height: 471px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:39px;
+}
+.price__item--left{
+    margin-left: auto;
+}
+
+.price__item{
+    width: 290px;
+    height: 216px;
+}

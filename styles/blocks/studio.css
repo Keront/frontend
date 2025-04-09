@@ -1,0 +1,10 @@
+.studio{
+    margin:30px 113px 0 139px;
+    display:flex;
+    flex-direction: row;
+    gap:53px;
+}
+
+.studio__discription{
+margin:121px 0 101px;
+}

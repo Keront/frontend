@@ -1,0 +1,11 @@
+.featured-in{
+    margin:90px 208px 0 ;
+}
+.featured-in__name{
+    text-align: center;
+    margin:0 0 30px;
+}
+.featured-in__many-names{
+    display:flex;
+    justify-content: space-between;
+}

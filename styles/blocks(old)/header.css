@@ -1,0 +1,25 @@
+header{
+    position: absolute;
+    top:0;
+    width: 100%;  
+}
+.header__nav-bar{
+    margin: 42px 80px 0px;
+    display:flex;
+    align-items: center;
+    gap:80px;
+}
+
+.header__nav{
+    display: flex;
+    gap: 30px;
+}
+
+.header__item{
+    /* тут стили надо */
+}
+
+.header__autorization{
+    margin-left: auto;
+}
+

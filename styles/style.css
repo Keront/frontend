@@ -1,10 +1,26 @@
 /*Подключение стилей относящихся к header*/
-@import 'blocks/header.css';
-/*Подключение стилей относящихся к main*/
-@import 'blocks/main.css';
+@import './blocks/header.css';
+/* Стиль для синей кнопки */
+@import './blocks/btn-blue.css';
 /*Подключение стилей относящихся к footer*/
-@import 'blocks/footer.css';
+@import './blocks/body.css';
+/*Подключение стилей относящихся к content*/
+@import './blocks/content.css';
+/*Подключение стилей относящихся к music-starts*/
+@import './blocks/music-starts.css';
 
-@import 'blocks/btn_blue.css';
+/*Подключение стилей относящихся к featured-in*/
+@import './blocks/featured-in.css';
+/*Подключение стилей относящихся к swiper*/
+@import './base/swiper.css';
 
-@import 'blocks/body.css';
+/*Подключение стилей относящихся к music-starts*/
+@import './blocks/sounds.css';
+/*Подключение стилей относящихся к plugins*/
+@import './blocks/plugins.css';
+
+/*Подключение стилей относящихся к studio*/
+@import './blocks/studio.css';
+
+/*Подключение стилей относящихся к praise*/
+@import './blocks/praise.css';

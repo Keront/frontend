@@ -1,0 +1,46 @@
+.plugins{
+    position: relative;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.plugins__background{
+    position:absolute;
+    z-index: -1;
+    top:0;
+    margin-top: 290px;
+
+}
+.plugins__line{
+    position: absolute;
+    z-index: -1;
+    top:0;
+    margin-top:25px;
+}
+.plugins__music-add{
+    align-self: center;
+    width: 760px;
+}
+
+.plugins__discription{
+    width:1156px;
+    height: 550px;
+    margin: 164px auto 0;
+    display:flex;
+    flex-direction: row;
+    gap:231px;
+}
+
+.plugins__many-logo{
+    height: 100%;
+}
+
+.plugins__many-logo-discription{
+    
+    margin-top:110px;
+    margin-bottom: 165px;
+    margin-left:auto;
+
+}
+
