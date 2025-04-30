@@ -19,6 +19,8 @@
     right:0;
 }
 
+
+
 .praise__creators{
     width: 1259px;
     height: 471px;
@@ -27,12 +29,14 @@
     display:flex;
     gap:161px
 }
+.praise__header{
+    color: #FFFFFF;
+}
 
 .praise__discription{
     width: 400px;
     height: 348px;
     margin-top: 84px;
-    color:#FFFFFF;
 }
 
 .praise__reviews{
@@ -49,10 +53,13 @@
 
 .praise__item{
     background-color: #202020;
-    color:#FFFFFF;
+    padding: 28px;
     width: 290px;
     height: 216px;
-    padding: 28px;
+    box-sizing: border-box;   
+    font-weight: 600; 
+    color:#FFFFFF;
+    line-height: 108%;
 }
 
    
@@ -71,14 +78,14 @@
     width: 40px;
     height: 40px;
 }
-.praise__item-creator-block{
-    margin: 0;
+.praise__creator-block{
+    font-weight: 400;
 }
-.praise__item-creator-name{
-    margin: 0;
+.praise__creator-name{
+    font-size: 11px;
 }
-.praise__item-creator-description{
-    margin: 0;
+.praise__creator-description{
+    font-size: 8px;
 }
 
 .praise__good{
@@ -90,7 +97,8 @@
 }
 .praise__good-text{
     text-align: center;
-
+    font-size: 38px;
+    color: #FFFFFF;
     margin: 0;
     top:0;
 }
@@ -113,16 +121,24 @@
 
 .praise__icon-header{
     margin:15px 0 0;
+    font-weight: 700;
+    font-size: 22px;
+
 }
 
 .praise__icon-description{
-    margin:19px 0 0;;
+    margin:19px 0 0;
+    font-size: 16px;
+    line-height: 171%;
+    color: #958A8A;
 }
 
 .praise__gradient{
     color: #FFFFFF;
     margin-top: 176px;
     height: 232px;
+    display: flex;
+    flex-direction: column;
 }
 
 .praise__gradient-svg{
@@ -136,11 +152,19 @@
     width: 549px;
     height: 78px;
     margin:43px 445px 0;
+    font-size: 36px;
+    font-weight: 800;
 }
 
 .praise_gradient-btn{
     align-items: center;
-    width: 184px;
-    height: 37px;
     margin:32px 628px 0;
+    font-weight: 500;
+    background-color: transparent;
+    font-size: 12px;
+    border-radius: 105px;
+    padding: 11px 35px;
+    color: #FFFFFF;
+    outline: 1px solid white;
+    border:0;
 }

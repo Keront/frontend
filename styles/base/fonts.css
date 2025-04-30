@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('/fonts/test-soehne-breit-buch.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('/fonts/test-soehne-breit-kraftig.woff2') format('woff2');
+    font-weight:500;
+    font-style:normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('/fonts/test-soehne-breit-halbfett.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('/fonts/test-soehne-breit-dreiviertelfett.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('/fonts/test-soehne-breit-fett.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

@@ -2,6 +2,8 @@
     position: relative;
     width: 100%;
     height: 700px;
+    display:flex;
+    z-index: -1;
 }
 
 .music-starts__background {
@@ -20,10 +22,32 @@
     right: 0;
     width: auto;
     height: 100%;
+    display:flex;
+    justify-content: space-between;
 }
 
-.music-starts__continer{
+.music-starts__where-your-music{
     margin:195px 0 0 81px;
     width: 510px;
-    height: 279px;
+    display:flex;
+    flex-direction: column;
+}
+
+.music-starts__text-image{
+    width: 481px;
+}
+
+.music-starts__discription{
+    color:#595959;
+    margin: 23px 0 0;    
+    line-height: 171%;
+    margin-top:18px;
+}
+
+.music-starts__btn{
+    margin-top: 34px;
+    width: 126px;
+    height: 37px;
+    bottom:0;
+
 }

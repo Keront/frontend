@@ -8,44 +8,82 @@
 }
 
 .footer__logo {
-    width: 191px;
-    height: 62px;
+    width: 115px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }
 
 .footer__logo-text {
+    width: 191px;
     font-size: 10px;
+    line-height: 143%;
+    color: #606060;
 }
 
 .footer__links {
     width: 620px;
     height: 465px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     justify-content: space-between;
-    gap: 40px;
+    justify-items: start;
+    gap:64px 0;
+    
 
 }
 
 .footer__item {
     font-size: 13px;
-    min-width: 130px;
-    max-height: 206px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer__item--studio{
+    width: 180px;
+    height: 193px;
+}
+.footer__item--community{
+    width: 146px;
+    height: 206px;
+}
+.footer__item--sounds{
+    width: 180px;
+    height: 170px;
+}
+.footer__item--plugins{
+    width: 130px;
+    height: 176px;
+}
+.footer__item--beatmaker{
+    width: 153px;
+    height: 116px;
+}
+.footer__item--blog{
+    width: 180px;
+    height: 195px;
 }
 
 .footer__item-h {
     font-size: 15px;
-    margin: 0;
+    margin-bottom: 7px;
+}
 
+.footer__item-p{
+    font-size: 13px;
+    color: #606060;
+    line-height: 143%;
 }
 
 
 .footer__social {
     width: 232px;
-    height: 130px;
 }
 
-.footer__social-h {
-    
+.footer__social-h {     
+    font-size: 15px;   
 }
 
 .footer__social-icons {
@@ -56,7 +94,7 @@
 }
 
 .footer__social-about {
-
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -65,5 +103,7 @@
 }
 
 .footer__social-about-p {
-    margin: 0;
+    color: #606060;
+    font-size: 10px;
+    line-height: 143%;
 }

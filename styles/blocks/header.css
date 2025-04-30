@@ -20,9 +20,24 @@
     margin-left: auto;
     display:flex;
     gap:28px;
+    border: 0;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 500;
 
 }
 
-.header__auth-btn {
-    
+.header__log-in{
+    color: white;
+    border:0;
+    padding: auto;
+    background-color: transparent;
+}
+
+.header__sign-up{
+    color: white;
+    border:0;
+    padding: 9px 31px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 105px;
 }

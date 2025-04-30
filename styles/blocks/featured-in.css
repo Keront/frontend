@@ -2,6 +2,9 @@
     margin:90px 208px 0 ;
 }
 .featured-in__name{
+    font-weight: 600;
+    color:#606060;
+    font-size: 13px;
     text-align: center;
     margin:0 0 30px;
 }

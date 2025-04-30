@@ -1,7 +1,9 @@
+/* Подключение шрифтов */
+@import "./base/fonts.css";
+/* Применение шрифтов */
+@import "./base/global.css";
 /*Подключение стилей относящихся к header*/
 @import './blocks/header.css';
-/* Стиль для синей кнопки */
-@import './blocks/btn-blue.css';
 /*Подключение стилей относящихся к body*/
 @import './blocks/body.css';
 /*Подключение стилей относящихся к footer*/
@@ -26,3 +28,11 @@
 
 /*Подключение стилей относящихся к praise*/
 @import './blocks/praise.css';
+
+/*Модификаторы*/
+/* Покрасить текст в синий */
+@import './blocks/h1--blue-color.css';
+/* Стиль для синей кнопки */
+@import './blocks/button--blue.css';
+/* Белый цвет для текста */
+@import './blocks/p--discription.css'

@@ -1,7 +1,12 @@
 .sounds{
     margin: 127px 441px 0;
     text-align: center;
+    
 }
 .sounds__name{
     margin: 0;
+}
+
+.sounds__find{
+
 }
