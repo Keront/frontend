@@ -5,6 +5,7 @@
     flex-direction: row;
     align-items: center;
     margin: 42px 80px 0;
+    z-index: 1;
 }
 
 .header__nav {

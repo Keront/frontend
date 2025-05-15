@@ -15,8 +15,6 @@
 
 /*Подключение стилей относящихся к featured-in*/
 @import './blocks/featured-in.css';
-/*Подключение стилей относящихся к swiper*/
-@import './base/swiper.css';
 
 /*Подключение стилей относящихся к music-starts*/
 @import './blocks/sounds.css';
@@ -28,6 +26,12 @@
 
 /*Подключение стилей относящихся к praise*/
 @import './blocks/praise.css';
+
+/*Подключение стилей относящихся к modal-windows*/
+@import './blocks/modal-window.css';
+
+/*Подключение стилей относящихся к modal-windows*/
+@import './blocks/preloader.css';
 
 /*Модификаторы*/
 /* Покрасить текст в синий */

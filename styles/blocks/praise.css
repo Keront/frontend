@@ -79,6 +79,7 @@
     height: 40px;
 }
 .praise__creator-block{
+    margin-left: 10px;
     font-weight: 400;
 }
 .praise__creator-name{

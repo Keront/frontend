@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="./styles/base/normalize.css"> -->
     <link rel="stylesheet" href="./styles/base/reset.css">
+    <link rel="stylesheet" href="./styles/base/swiper.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="./img/logo-icon.svg" type="image/x-icon">
     <title>splice</title>
-    <style>
+    <!-- <style>
         * {
             outline: 1px solid green;
         }
@@ -17,7 +18,7 @@
         html {
             outline: 0;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
@@ -33,8 +34,8 @@
         </nav>
 
         <div class="header__auth">
-            <button class="header__log-in">LOG IN</button>
-            <button class="header__sign-up">SIGN UP</button>
+            <button class="header__log-in" onclick="modalOpen()">LOG IN</button>
+            <button class="header__sign-up" onclick="modalOpen()">SIGN UP</button>
         </div>
 
     </header>
@@ -53,10 +54,40 @@
                 <p class="music-starts__discription ">Royalty-free sounds. Industry-leading software.
                     <br>Endless inspiration. Start creating with Splice.
                 </p>
-                <button class="music-starts__btn button--blue">SIGN UP</button>
+                <button class="music-starts__btn button--blue" onclick="modalOpen()">SIGN UP</button>
             </div>
         </div>
         <div class="featured-in">
+            <p class="featured-in__name">FEATURE IN</p>
+            <!-- swiper-container -->
+            <div class="swiper featured-in__many-names">
+                <div class="swiper-wrapper">
+                    <!-- swiper-slide каждому элементу -->
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/1.svg"
+                        alt="many-names-under-futured-in-1">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/2.svg"
+                        alt="many-names-under-futured-in-2">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/3.svg"
+                        alt="many-names-under-futured-in-3">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/4.svg"
+                        alt="many-names-under-futured-in-4">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/5.svg"
+                        alt="many-names-under-futured-in-5">
+                    <!-- swiper-slide каждому элементу -->
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/1.svg"
+                        alt="many-names-under-futured-in-1">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/2.svg"
+                        alt="many-names-under-futured-in-2">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/3.svg"
+                        alt="many-names-under-futured-in-3">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/4.svg"
+                        alt="many-names-under-futured-in-4">
+                    <img class="featured-in__item swiper-slide" src="./img/many-names-under-futured-in/5.svg"
+                        alt="many-names-under-futured-in-5">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="featured-in">
             <p class="featured-in__name">FEATURE IN</p>
             <div class="featured-in__many-names">
                 <img class="featured-in__item" src="./img/many-names-under-futured-in/1.svg"
@@ -70,11 +101,12 @@
                 <img class="featured-in__item" src="./img/many-names-under-futured-in/5.svg"
                     alt="many-names-under-futured-in-5">
             </div>
-        </div>
+        </div> -->
         <div class="sounds">
             <h2 class="sounds__name">SOUNDS</h2>
             <h1 class="sounds__find">Find your <span class="h1--blue-color">sound</span></h1>
-            <p class="sounds__description p--discription">Preview and download millions of royalty-free samples from top producers,
+            <p class="sounds__description p--discription">Preview and download millions of royalty-free samples from top
+                producers,
                 artists, and sound designers. Available on desktop, web, and mobile.</p>
             <button class="sounds__try-sounds button--blue">TRY SOUND</button>
         </div>
@@ -88,7 +120,8 @@
                 <div class="plugins__many-logo-discription">
                     <h2>PLUGINS</h2>
                     <h1>Build your <span class="h1--blue-color">digital studio</span></h1>
-                    <p class="plugins__text-discription p--discription">Try industry-leading music software for free, pay it off over time and own it forever.</p>
+                    <p class="plugins__text-discription p--discription">Try industry-leading music software for free,
+                        pay it off over time and own it forever.</p>
                     <button class="plugins__btn button--blue">TRY GEAR</button>
 
                 </div>
@@ -96,9 +129,10 @@
             <div class="studio">
                 <div class="plugins__many-logo-discription">
                     <h2>STUDIO</h1>
-                    <h1 class="plugins__text-header">Stay in <span class="h1--blue-color">sync</span></h1>
-                    <p class="plugins-text-discription p--discription">Try industry-leading music software for<br> free, pay it off over time and own it forever.</p>
-                    <button class="plugins__btn button--blue">TRY STUDIO</button>
+                        <h1 class="plugins__text-header">Stay in <span class="h1--blue-color">sync</span></h1>
+                        <p class="plugins-text-discription p--discription">Try industry-leading music software for<br>
+                            free, pay it off over time and own it forever.</p>
+                        <button class="plugins__btn button--blue">TRY STUDIO</button>
                 </div>
                 <img class="plugins__many-logo" src="./img/demonstration-mobile-app.png" alt="demonstration-mobile-app">
             </div>
@@ -110,12 +144,15 @@
                 </div>
                 <div class="praise__creators">
                     <div class="praise__discription">
-                        <h1 class="praise__header">What <span class="h1--blue-color">creators</span> are saying about Splice</h1>
-                        <p class="praise__text p--discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue tellus urna, mi velit diam.
+                        <h1 class="praise__header">What <span class="h1--blue-color">creators</span> are saying about
+                            Splice</h1>
+                        <p class="praise__text p--discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Augue tellus urna, mi velit diam.
                             Turpis diam amet massa id.</p>
                         <button class="praise__btn button--blue">TRY IT NOW</button>
                     </div>
-                    <div class="praise__reviews">
+                    <div class="praise__reviews"></div>
+                    <!-- <div class="praise__reviews">
                         <div class="praise__item">
                             <p class="praise__item-text">I can always find what Im looking for on Splice, whether its
                                 the exact sound I want or just a bit of inspiration.</p>
@@ -162,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="praise__good">
@@ -270,6 +307,36 @@
             </div>
         </div>
     </footer>
+    <div class="modal" onclick="modalClose()">
+        <div class="modal__content" onclick="event.stopPropagation()">
+            <h1>Registration</h1>
+            <form action="">
+                <div class="modal__form-group">
+                    <label for="name">Name</label>
+                    <input class="modal__form-input" type="text" name="name">
+                </div>
+                <div class="modal__form-group">
+                    <label for="email">Email</label>
+                    <input class="modal__form-input" type="email" name="email">
+                </div>
+            </form>
+            <button class="modal__btn button--blue" onclick="modalClose()">Ok</button>
+            <a class="modal__btn-close" onclick="modalClose()">Cancel</a>
+        </div>
+
+    </div>
+    <div class="preloader">
+        <div id="ball-main">
+        </div>
+        <div class='ball-one loader--mod'>
+        </div>
+        <div class='ball-two loader--mod'>
+        </div>
+        <div class='ball-three loader--mod'>
+        </div>
+    </div>
+    <script src="scripts/swiper.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
