@@ -1,5 +1,5 @@
 body {
-    font-family: 'Sohne Breit', sans-serif;
+    font-family: 'Sohne', sans-serif;
 }
 
 header{
@@ -26,7 +26,7 @@ p{
 }
 
 button{
-    font-family: 'Sohne Breit';
+    font-family: 'Sohne', sans-serif;
     font-weight: 500;
     font-size: 12px;
 }
