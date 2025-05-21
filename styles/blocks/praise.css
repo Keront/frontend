@@ -66,6 +66,8 @@
 
 .praise__item-text{
     margin: 0;
+    height: 95px;        
+    overflow: hidden;
 
 }
 

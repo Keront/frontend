@@ -1,34 +1,22 @@
-const cards = {
-    card_1: {
-        text: "I can always find what I'm looking for on Splice, whether it's the exact sound I want or just a bit of inspiration.",
-        avatar: "./img/avatars/1.png",
-        name: "Andrew Huang",
-        description: "Artist",
-        specialClass: ""
-    },
-    card_2: {
-        text: "Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the top VSTs.",
-        avatar: "./img/avatars/2.png",
-        name: "KSHMR",
-        description: "Artist",
-        specialClass: ""
-    },
-    card_3: {
-        text: "It's been fun to dive into Splice's creator community and explore tools that support my own creative process.",
-        avatar: "./img/avatars/3.png",
-        name: "Kesha Lee",
-        description: "Artist",
-        specialClass: "praise__item--left"
-    },
-    card_4: {
-        text: "I can always find what I'm looking for on Splice, whether it's the exact sound I want or just a bit of inspiration.",
-        avatar: "./img/avatars/1.png",
-        name: "Andrew Huang",
-        description: "Artist",
-        specialClass: ""
+// получение данных с сервера
+async function fetchCards() {
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users?_limit=4');
+        const comments = await response.json();
+        
+        //комментарии в формат карточек
+        return comments.map((comment, index) => ({
+            text: comment.company.catchPhrase,
+            avatar: `./img/avatars/${index + 1}.png`, // локальные аватары
+            name: comment.name,
+            description: comment.username,
+            specialClass: index === 2 ? "praise__item--left" : "" //особый класс для карточки 3
+        }));
+    } catch (error) {
+        console.error('Ошибка при загрузке данных:', error);
+        return [];
     }
-};
-
+}
 
 function createCardElement(cardData) {
     return `
@@ -46,38 +34,40 @@ function createCardElement(cardData) {
 }
 
 
-function renderCards() {
+async function renderCards() {
     const container = document.querySelector('.praise__reviews');
-
-
     container.innerHTML = '';
 
-
-    for (const cardKey in cards) {
-        if (cards.hasOwnProperty(cardKey)) {
-            const cardElement = createCardElement(cards[cardKey]);
-            container.insertAdjacentHTML('beforeend', cardElement);
-        }
+    const cards = await fetchCards(); // Получаем данные с сервера
+    
+    if (cards.length === 0) {
+        container.innerHTML = '<p>Не удалось загрузить данные</p>';
+        return;
     }
+
+    cards.forEach(card => {
+        const cardElement = createCardElement(card);
+        container.insertAdjacentHTML('beforeend', cardElement);
+    });
 }
 
-// //////////////////////////////////////////
 function namesSwiper() {
     new Swiper('.featured-in__many-names', {
-        slidesPerView: 5,  // Показывает столько слайдов, сколько помещается
-        spaceBetween: 80,        // Убирает отступы между слайдами
-        loop: true,             // Бесконечная прокрутка
+        slidesPerView: 5,
+        spaceBetween: 80,
+        loop: true,
         autoplay: {
-            delay: 2000,        //Задержка между переключениями
+            delay: 2000,
         },
-        speed: 2000,            //Скорость переключения
-        direction: 'horizontal', //Горизонтальное направление
+        speed: 2000,
+        direction: 'horizontal',
     });
 };
 
 function modalOpen() {
     document.querySelector('.modal').style.display = "flex";
 }
+
 function modalClose() {
     document.querySelector('.modal').style.display = "none";
 }
@@ -86,9 +76,7 @@ setTimeout(() => {
     const preloader = document.querySelector('.preloader');
     preloader.innerHTML = '';
     preloader.style.display = "none";
-
 }, 500);
-
 
 document.addEventListener('DOMContentLoaded', function () {
     renderCards();
