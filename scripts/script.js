@@ -1,7 +1,7 @@
 // получение данных с сервера
 async function fetchCards() {
     try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users?_limit=4');
+        const response = await fetch('./jsonplaceholder-users.json');
         const comments = await response.json();
         
         //комментарии в формат карточек

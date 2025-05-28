@@ -1,0 +1,18 @@
+{
+
+  "compilerOptions": {
+    "target": "ES2016",
+
+    "allowJs": true,
+
+    "checkJs": true,
+
+    "sourceMap": true,
+
+    "outDir": "./scripts"
+
+  },
+
+  "include": ["ts/**/*"]
+
+}
