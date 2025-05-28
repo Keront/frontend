@@ -1,32 +1,11 @@
-// Define interfaces for the data structure
-interface Company {
-    catchPhrase: string;
-    // Add other company properties if needed
-}
-
-interface UserComment {
-    company: Company;
-    name: string;
-    username: string;
-    // Add other user properties if needed
-}
-
-interface CardData {
-    text: string;
-    avatar: string;
-    name: string;
-    description: string;
-    specialClass: string;
-}
-
 // получение данных с сервера
-async function fetchCards(): Promise<CardData[]> {
+async function fetchCards() {
     try {
         const response = await fetch('./jsonplaceholder-users.json');
-        const comments: UserComment[] = await response.json();
+        const comments = await response.json();
         
         //комментарии в формат карточек
-        return comments.map((comment: UserComment, index: number) => ({
+        return comments.map((comment, index) => ({
             text: comment.company.catchPhrase,
             avatar: `./img/avatars/${index + 1}.png`, // локальные аватары
             name: comment.name,
@@ -39,7 +18,7 @@ async function fetchCards(): Promise<CardData[]> {
     }
 }
 
-function createCardElement(cardData: CardData): string {
+function createCardElement(cardData) {
     return `
       <div class="praise__item ${cardData.specialClass}">
         <p class="praise__item-text">${cardData.text}</p>
@@ -54,10 +33,9 @@ function createCardElement(cardData: CardData): string {
     `;
 }
 
-async function renderCards(): Promise<void> {
+
+async function renderCards() {
     const container = document.querySelector('.praise__reviews');
-    if (!container) return;
-    
     container.innerHTML = '';
 
     const cards = await fetchCards(); // Получаем данные с сервера
@@ -73,7 +51,7 @@ async function renderCards(): Promise<void> {
     });
 }
 
-function namesSwiper(): void {
+function namesSwiper() {
     new Swiper('.featured-in__many-names', {
         slidesPerView: 5,
         spaceBetween: 80,
@@ -84,28 +62,20 @@ function namesSwiper(): void {
         speed: 2000,
         direction: 'horizontal',
     });
+};
+
+function modalOpen() {
+    document.querySelector('.modal').style.display = "flex";
 }
 
-function modalOpen(): void {
-    const modal = document.querySelector('.modal') as HTMLElement;
-    if (modal) {
-        modal.style.display = "flex";
-    }
-}
-
-function modalClose(): void {
-    const modal = document.querySelector('.modal') as HTMLElement;
-    if (modal) {
-        modal.style.display = "none";
-    }
+function modalClose() {
+    document.querySelector('.modal').style.display = "none";
 }
 
 setTimeout(() => {
-    const preloader = document.querySelector('.preloader') as HTMLElement;
-    if (preloader) {
-        preloader.innerHTML = '';
-        preloader.style.display = "none";
-    }
+    const preloader = document.querySelector('.preloader');
+    preloader.innerHTML = '';
+    preloader.style.display = "none";
 }, 500);
 
 document.addEventListener('DOMContentLoaded', function () {
